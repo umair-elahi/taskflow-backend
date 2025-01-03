@@ -6,7 +6,7 @@
   "scripts": {
     "build-ts": "tsc",
     "postinstall": "npm run build-ts",
-    "start": "nodemon server",
+    "start": "nodemon server.js",
     "serve": "nodemon server --node-env=development | bunyan -o simple",
     "start:dev": "nodemon server --node-env=development | bunyan -o simple",
     "start:qa": "nodemon server --node-env=qa | bunyan -o simple",
@@ -14,12 +14,12 @@
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
     "pretest": "npm run lint",
-    "sqlz:createdb": "sequelize db:create --url 'postgres://postgres:postgres@localhost:5432/postgres'",
-    "sqlz:migrate": "sequelize db:migrate",
+    "sqlz:createdb": "sequelize db:create --url 'postgres://postgres:postgres@localhost:5432/taskflow'",
+    "sqlz:migrate": "sequelize db:migrate --url 'postgres://postgres:postgres@localhost:5432/taskflow'",
     "sqlz:undo": "sequelize db:migrate:undo",
     "sqlz:new": "sequelize migration:create",
     "sqlz:seednew": "sequelize seed:create",
-    "sqlz:seed": "sequelize db:seed:all",
+    "sqlz:seed": "sequelize db:seed:all --url 'postgres://postgres:postgres@localhost:5432/taskflow'",
     "sqlz:seedp": "sequelize db:seed --seed"
   },
   "author": "Muhammad Owais <mok.developer@gmail.com>",
@@ -56,7 +56,6 @@
     "nodemailer": "^5.0.0",
     "pg": "^7.4.3",
     "pg-hstore": "2.3.2",
-    "randexp": "git://github.com/fent/randexp.js.git#v0.5.2",
     "sequelize-cli": "^6.6.2",
     "uuid": "3.3.2"
   },

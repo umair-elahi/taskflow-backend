@@ -6,7 +6,7 @@ const sequelize = new Sequelize({
   port: 5432,
   username: 'postgres',
   password: 'postgres',
-  database: 'postgres',
+  database: 'taskflow',
 });
 
 (async () => {
