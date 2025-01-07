@@ -6,8 +6,8 @@ module.exports = {
     development: {
         host: 'localhost',
         port: 5432,
-        username: 'taskflow',
-        password: 'taskflow',
+        username: 'postgres',
+        password: 'postgres',
         database: 'taskflow',
         dialect: 'postgres',
         dialectOptions: {
