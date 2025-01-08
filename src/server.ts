@@ -21,9 +21,11 @@ dotenv.config();
 
 const whitelist: string | any[] = [
   'http://localhost:4200',
+  'http://localhost:4000',
   'http://localhost:3000',
   'http://localhost',
   'http://localhost:8100',
+  'https://aetasaal.duckdns.org',
   // 'http://54.146.103.85:3000',
   // 'http://54.146.103.85:3000/upload',
   // 'http://54.146.103.85:3000/api',
