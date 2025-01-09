@@ -1,0 +1,180 @@
+form {
+
+    input,
+    textarea,
+    select {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        margin-bottom: 10px;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #d2d6de;
+    }
+
+    input[type=submit] {
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        background: $theme-primary;
+        font-family: Poppins, sans-serif;
+        font-size: 12px;
+        color: #fff;
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.4s;
+
+    }
+
+    input {
+        &.form-control {
+
+            background: transparent;
+            border-radius: 10px;
+            padding: 10px 10px 10px 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    label {
+        line-height: 18px;
+        font-size: 16px;
+        color: #4a4a4a;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    textarea {
+        width: 97%;
+        height: 100px !important;
+        background-color: $theme-white;
+
+    }
+
+    .submit-btn {
+        width: 50%;
+    }
+
+    input[type=time]:before {
+        content: 'Time';
+        padding-right: 10px;
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        border: 2px solid #5a5a5a;
+        top: 0;
+        z-index: 0;
+
+        &:before {
+            background: blue !important;
+            color: white;
+            content: '';
+        }
+    }
+
+    .login-form {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#5e2572), to(#5e2572)), -webkit-gradient(linear, left top, left bottom, from(#d9d9d9), to(#d9d9d9));
+        color: #67757c;
+        min-height: 38px;
+        display: initial;
+        border: 0;
+        -webkit-background-clip: padding-box;
+        background-color: transparent;
+        background-position: center bottom, center calc(100% - 1px);
+        background-repeat: no-repeat;
+        background-size: 0 2px, 100% 1px;
+        padding: 0;
+        text-indent: 10px;
+    }
+}
+
+.login-page {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .mat-form-field {
+        display: block;
+    }
+}
+
+.custom-error {
+    text-align: left;
+    color: red;
+    padding-bottom: 15px;
+}
+
+.input-error {
+    background: #f18282 !important;
+    border: 1px solid red !important;
+}
+
+.ng-input {
+    ::placeholder {
+        margin-top: 10px !important;
+    }
+}
+
+.ng-select {
+    .ng-placeholder {
+        margin-top: 10px !important;
+    }
+}
+
+.ng-select {
+    .ng-input {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+input {
+    &.form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        margin-bottom: 10px;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #d2d6de;
+    }
+}
+textarea {
+    &.form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        margin-bottom: 10px;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0;
+        box-shadow: none;
+        border-color: #d2d6de;
+    }
+}

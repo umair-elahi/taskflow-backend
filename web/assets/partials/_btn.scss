@@ -1,0 +1,145 @@
+.btn {
+    padding: 10px 8px;
+    margin-right: 15px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    @include transition(0.4s ease);
+    cursor: pointer;
+
+    &.\--large {
+        padding: 20px 20px;
+        border-radius: 50px;
+        border: none;
+        width: 200px;
+        font-size: 16px;
+    }
+
+    &.\--small {
+        background-color: #fff;
+        color: #000;
+        padding: 5px 25px;
+
+    }
+
+    &.\--xsmall {
+        background-color: #fff;
+        color: #000;
+        padding: 2px 8px;
+        font-size: 11px;
+        line-height: 18px;
+
+    }
+
+    &.btn-coa {
+        padding: 15px 55px !important;
+        margin: 0 0.5px;
+        border: 1px solid white;
+        width: 19%;
+    }
+
+    &.btn-coa-active {
+        background: $theme-primary !important;
+        color: $theme-white !important;
+        font-weight: bold;
+    }
+
+    &.btn-default {
+        background-color: #f4f4f4;
+        color: #4a4a4a;
+        border-color: #ddd;
+    }
+
+    &.btn-info {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #fff;
+
+        &:hover {
+            color: #3498db;
+            background-color: white;
+        }
+    }
+
+    &.btn-success {
+        background-color: #00c689;
+        border-color: #00c689;
+        color: #fff;
+    }
+
+    &.btn-green {
+        background-color: #00c689;
+        border-color: #00c689;
+        color: #fff;
+    }
+
+    &.btn-danger {
+        background-color: #e74c3c;
+        border-color: #e74c3c;
+        color: #fff;
+
+        &:hover {
+            color: #e74c3c;
+            background-color: white;
+        }
+    }
+
+    &.btn-warning {
+        background-color: #ffc100;
+        border-color: #ffc100;
+        color: #fff;
+    }
+
+    &.btn-primary {
+
+        background-color: $theme-primary;
+        border-color: $theme-primary;
+        color: #fff;
+        @include transition(all 0.5s ease-in-out);
+
+        &:hover {
+            color: $theme-primary;
+            background-color: white;
+        }
+
+
+        &.\--outline {
+            background: none;
+            border-radius: 10px;
+            color: $theme-primary;
+            border: 2px solid $theme-primary;
+
+        }
+
+    }
+
+    &.btn-secondary {
+        color: #6c757d !important;
+        background-color: #d9dbdc;
+        border-color: #d9dbdc;
+
+        &:hover {
+            background-color: #6c757d;
+            color: white !important;
+            border: #6c757d;
+        }
+
+        &.\--outline {
+            padding: 5px 30px;
+            background: none;
+            border-radius: 10px;
+            color: $theme-secondary;
+            border: 1.7px solid $theme-secondary;
+
+        }
+    }
+
+    &.btn-rounded {
+        border-radius: 60px;
+    }
+
+
+}

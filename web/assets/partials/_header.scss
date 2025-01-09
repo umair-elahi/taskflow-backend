@@ -1,0 +1,169 @@
+header {
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    &.ph {
+        position: relative;
+        width: 85%;
+        float: right;
+        min-height: 60px;
+        z-index: 13;
+        padding: 10px 0px;
+        background: $header;
+
+        &.toggle {
+            width: 85% !important;
+        }
+
+        &.auto {
+            width: 96%;
+            transition: 0.6s;
+        }
+
+        @media (max-width:991px) {
+            max-width: 100%;
+            padding: 12px 0;
+            top: 0;
+        }
+
+        .search-box {
+            input {
+                height: 36px;
+                border-radius: 50px;
+                border: 1px solid #d2d6de;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .icon {
+                position: absolute;
+                top: 30%;
+                right: 22%;
+            }
+        }
+
+        .dropdown-btns {
+            padding-top: 20px;
+
+            .dropdown-setting {
+                width: 655px !important;
+                min-width: 300px;
+            }
+        }
+
+        .user-menu-btn {
+            width: auto;
+            margin-top: 10px;
+            border-radius: 100px;
+            border: none;
+            background: #eaeaea;
+            max-width: 300px;
+            overflow: hidden;
+            color: #fff;
+
+            i {
+                float: left;
+                font-size: 19px;
+                color: #fff;
+                padding-right: 10px;
+                line-height: 35px;
+            }
+
+            .name {
+                font-size: 15px;
+                font-weight: bold;
+                width: 85%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.cdk-overlay-container {
+    .module-box {
+        min-width: 330px;
+        width: 650px !important;
+        max-width: 650px !important;
+        border-radius: 3px !important;
+
+        .icon-box {
+            background-color: #eceff5;
+            border-radius: 7px;
+            transition: 0.6s;
+            margin: 10px;
+
+            &:hover {
+                background-color: $theme-primary;
+
+                .icon {
+                    color: white;
+                }
+
+                .text {
+                    color: white;
+                }
+            }
+
+            .icon {
+                color: #c7c8ca;
+
+            }
+        }
+
+        .module-btn {
+            width: 200px;
+            display: inline-block;
+
+            .active {
+                background-color: $theme-primary;
+                color: $theme-white;
+
+                i {
+                    color: $theme-white;
+                }
+            }
+        }
+    }
+
+    .usermenu-box {
+        width: 200px !important;
+        border-radius: 5px !important;
+
+        button {
+            color: #333;
+            border-top: 1px solid #eee;
+            transition: 0.5s;
+            letter-spacing: 1px;
+
+            i {
+                font-size: 22px;
+            }
+
+            &:nth-child(1) {
+                border: none;
+
+            }
+
+            &:hover {
+                background: #e5e5e5;
+            }
+        }
+
+        .mat-menu-content {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+
+            .mat-menu-item {
+                line-height: normal !important;
+
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

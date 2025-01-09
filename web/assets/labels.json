@@ -1,0 +1,13 @@
+[
+    {
+      "id": 1,
+      "title": "Urgent",
+      "color": "#FF0000"
+    },
+    {
+      "id": 2,
+      "title": "Low Priority",
+      "color": "#00FF00"
+    }
+  ]
+  

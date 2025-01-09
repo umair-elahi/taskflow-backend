@@ -1,0 +1,105 @@
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800');
+// @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900');
+
+
+$base-font-family: 'Poppins',
+sans-serif;
+$heading-font-family: 'Poppins',
+sans-serif;
+
+$another-font-family: 'Poppins',
+sans-serif;
+$icon-font-family: 'FontAwesome';
+
+$base-line-height: 28px;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+
+$base-font-size: 14px !default;
+$font-size-h1: 90px;
+$font-size-h2: 56px;
+$font-size-h3: 45px;
+$font-size-h4: 28px;
+$font-size-h5: 24px;
+$font-size-h6: 20px;
+
+$font-size-xsmall: 14px;
+$font-size-small: 16px;
+$font-size-medium: 18px;
+$font-size-large: 34px;
+$font-size-xlarge : 65px;
+
+$font-weight-black: 900;
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-medium: 500;
+$font-weight-normal: 400;
+$font-weight-light: 300;
+$font-weight-thin: 100;
+
+// For Mobile Screen
+
+$base-line-height-mob: 22px;
+
+$base-font-size-mob: 12px !default;
+$font-size-mob-h1: 34px;
+$font-size-mob-h2: 30px;
+$font-size-mob-h3: 26px;
+$font-size-mob-h4: 22px;
+$font-size-mob-h5: 20px;
+$font-size-mob-h6: 18px;
+
+
+
+//== Color Variation
+//
+//## Text color, Background color, Border color.
+
+$theme-default: #282929;
+$theme-white: #ffffff;
+$theme-lg-white : #999999;
+$theme-lg-black : #282e33;
+$theme-black: #000000;
+$theme-silver: #f1f1f1;
+$theme-grey: #44494d;
+$theme-lg-grey: #dadada;
+$theme-sp-grey: #f6f6f6;
+$theme-dk-grey: #eeeeee;
+$theme-sp-blue: #25252f;
+$theme-dark : #212529;
+// Theme Colors
+
+$theme-primary: #b80000;
+
+$theme-danger: #fc7242;
+$theme-info: #4d13d1;
+$theme-success : #00c689;
+$theme-middle: #000000;
+$theme-warning: #ffc100;
+$theme-secondary: #e2e3e5;
+
+$link-color: #333333;
+
+$selected-menu : #b80000;
+$side-menu : #fff;
+$header : #b80000;
+
+//== Sprite Path
+//
+
+$sprite-image: "sprite.png";
+$media-basepath: "images";
+$full-path: "#{$media-basepath}/#{$sprite-image}";
+
+
+// Icon Fonts Path
+$icomoon-font-path: "assets-web/icon-fonts/fonts" !default;
