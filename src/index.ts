@@ -11,7 +11,7 @@ start();
 async function start() {
   try {
     await bootstrap(log);
-    await startServer(log); 
+    // await startServer(log); 
     await loadTemplates();
   } catch (err) {
     log.error(err.message, 'error while application setup');
