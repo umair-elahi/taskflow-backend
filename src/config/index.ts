@@ -102,7 +102,7 @@ const config = convict<IConfig>({
     },
     database: {
       format: String,
-      default: 'postgres'
+      default: 'taskflow'
     },
     url: {
       format: String,
